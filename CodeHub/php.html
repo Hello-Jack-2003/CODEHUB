@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <link rel="shortcut icon" href="images/CodeHub_icon.png" type="image/png">
+    <link rel="stylesheet" href="css/index_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="text-400 bg-gray-100% body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="index.html">
+               <img src="images/CodeHub_icon.png" class="iconimg" alt="" srcset="">
+                <img src="images/CodeHub_logo.png" class="logoimg" alt="" srcset="">
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white-blod hover:border-b-4 hover:border-red-300" href="index.html">Home</a>
+                <a class="mr-5 hover:text-white-blod hover:border-b-4 hover:border-blue-300"
+                    href="courses.html">Courses</a>
+                <a class="mr-5 hover:text-white-blod hover:border-b-4 hover:border-green-300"
+                    href="notes.html">Notes</a>
+                <a class="mr-5 hover:text-white-blod hover:border-b-4 hover:border-pink-300"
+                    href="tutorial.html">Tutorial</a>
+                <a class="mr-5 hover:text-white-blod hover:border-b-4 hover:border-orange-300"
+                    href="liveeditor.html">Live
+                    Editor</a>
+                <a class="mr-5 hover:text-white-blod hover:border-b-4 hover:border-blue-300" href="about.html">About
+                    Us</a>
+            </nav>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-400" href="https://www.facebook.com" target="_blank">
+                        <svg fill="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                            viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.twitter.com" target="_blank">
+                        <svg fill="skyblue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.instagram.com" target="_blank">
+                        <svg fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.linkedin.com" target="_blank">
+                        <svg fill="skyblue" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </nav>
+            <a href="login.html"
+                class="inline-flex items-center bg-aliceblue border-0 py-1 px-3 focus:outline-none hover:bg-green-700 rounded text-base mt-4 md:mt-0">
+                <svg width="20" height="20" fill="currentColor" class="mr-2" aria-hidden="true">
+                    <path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z" />
+                </svg>Login / Sign Up
+            </a>
+        </div>
+        <hr style="padding: 1px;">
+    </header>
+    <div class="max-h-[16vh] min-h-[15px] flex items-center ml-3 mr-3 md:ml-10 md:mr-10 my-1">
+        <a href="index.html"><svg stroke="currentColor" fill="green" stroke-width="0" viewbox="0 0 1024 1024"
+                class="max-h-[16vh] min-h-[15px] text-purple-700 text-xl cursor-pointer dark:text-purple-400"
+                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z">
+                </path>
+            </svg>
+        </a>
+        <ul class="space-x-12 m-auto text-purple-700 font-semibold hidden md:flex items-center">
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-red-300">
+                <a href="html.html">HTML</a>
+            </li>
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-blue-300">
+                <a href="css.html">CSS</a>
+            </li>
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-green-300">
+                <a href="js.html">JS</a>
+            </li>
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-orange-300">
+                <a href="c.html">C</a>
+            </li>
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-purple-300">
+                <a href="cpp.html">C++</a>
+            </li>
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-yellow-300">
+                <a href="java.html">JAVA</a>
+            </li>
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-indigo-300">
+                <a href="python.html">PYTHON</a>
+            </li>
+            <li class="cursor-pointer hover:border-b-2 hover:border-blue-100 active:border-b-4 dark:text-pink-300">
+                <a href="php.html">PHP</a>
+            </li>
+        </ul>
+    </div>
+    <hr style="padding: 5px;">
+    <div class="min-h-full dark:bg-gray-900 mb-4 ">
+        <h1 class="text-center text-3xl pt-4 pb-4 font-semibold text-purple-700 dark:text-purple-400 ">PHP
+        </h1>
+        <div class="justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 ">
+            <div class="p-6 flex justify-center">
+                <div
+                    class="w-full max-w-sm bg-white rounded-xl border border-gray-200 shadow-md dark:bg-slate-800 dark:border-black">
+                    <div class="flex flex-col items-center p-6 "><img class="mb-3 w-24 h-24 rounded-full shadow-lg"
+                            src="images/notes-php.webp" alt="html">
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">PHP Notes</h5>
+                        <div class="grid  mt-4  "><a
+                                class="inline-block text-white bg-purple-700 rounded-full px-3 py-2 text-sm font-semibold mr-2 my-1 cursor-pointer hover:bg-purple-900 text-center text-semibold"
+                                href="notes/PHP Objects.pdf" target="_blank"><button class="font-semibold">Start
+                                    Learning</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex justify-center">
+                <div
+                    class="w-full max-w-sm bg-white rounded-xl border border-gray-200 shadow-md dark:bg-slate-800 dark:border-black">
+                    <div class="flex flex-col items-center p-6 ">
+                        <iframe width="350" height="315" src="https://www.youtube.com/embed/1SnPKhCdlsU?si=l0UpkCAFOKx9Bdzr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen=""></iframe>
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">PHP Tutorial
+                        </h5>
+                        <div class="grid  mt-4  ">
+                            <a class="inline-block text-white bg-purple-700 rounded-full px-3 py-2 text-sm font-semibold mr-2 my-1 cursor-pointer hover:bg-purple-900 text-center text-semibold"
+                                href="https://youtu.be/1SnPKhCdlsU?si=l0UpkCAFOKx9Bdzr" target="_blank"><button
+                                    class="font-semibold">Start
+                                    Learning!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer class="text-gray-400 bg-gray-100% body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <img src="images/CodeHub_icon.png" class="iconimg" alt="" srcset="">
+                    <img src="images/CodeHub_logo.png" class="logoimg" alt="" srcset="">
+                </a>
+                <p class="mt-2 text-sm text-gray-500">An E-Learning Website For : <br> Students <br> Programmers <br>
+                    Everyone </p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Tutorial</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="html.html">HTML Tutorial</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="css.html">CSS Tutorial</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="js.html">JS Tutorial</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="php.html">PHP Tutorial</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="python.html">PYTHON Tutorial</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="java.html">JAVA Tutorial</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="c.html">C Tutorial</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="cpp.html">C++ Tutorial</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Notes</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="html.html">HTML Notes</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="css.html">CSS Notes</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="js.html">JS Notes</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="php.html">PHP Notes</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="python.html">PYTHON Notes</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="java.html">JAVA Notes</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="c.html">C Notes</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="cpp.html">C++ Notes</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Cources</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="html.html">HTML Basic</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="css.html">CSS Basic</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="js.html">JS Basic</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="php.html">PHP Basic</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="java.html">JAVA Basic</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="python.html">PYTHON Basic</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="c.html">C Basic</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="cpp.html">C++ Basic</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Pages</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="liveeditor.html">Live Editor</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="login.html">Login/Sign up</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="about.html">About Us.</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white" href="mailto:jayantparihar01@gmail.com">Contact
+                                Us.</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-100% bg-opacity-75">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-200 text-sm text-center sm:text-left">© 2023 CodeHub —
+                    <a href="mailto:jayantparihar01@gmail.com" rel="noopener noreferrer" class="text-gray-400 ml-1"
+                        target="_blank">@JayantParihar01</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-400" href="https://www.facebook.com" target="_blank">
+                        <svg fill="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                            viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.twitter.com" target="_blank">
+                        <svg fill="skyblue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.instagram.com" target="_blank">
+                        <svg fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.linkedin.com" target="_blank">
+                        <svg fill="skyblue" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
