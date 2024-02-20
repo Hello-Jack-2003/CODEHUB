@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    background-color: #1f2029;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: solid;
+}
+
+footer {
+    padding-top: 0%;
+    margin: 0%;
+}
+
+.logoimg {
+    width: 35%;
+}
+
+.iconimg {
+    width: 11%
+}
+
+#login {
+    color: rgb(45, 82, 216);
+}
+#aboutj,#aboutj2{
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+
+}
